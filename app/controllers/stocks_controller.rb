@@ -10,8 +10,8 @@ class StocksController < ApplicationController
       #render json: @stock
       render partial: 'lookup'
     else
-      head :ok
-      #render status: :not_found, body: nil
+      #head :ok
+      render status: :not_found, body: nil
     end
   end
 
